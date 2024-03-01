@@ -5,14 +5,14 @@ const sass = require('gulp-sass')(require('sass'));
 
 // compiling sass to css file and put it in css root folder
 function buildStyles() {
-    return src('index.scss')
+    return src('*.scss')
         .pipe(sass())
         .pipe(dest('css'))
 }
 
 // watch source sass file - auto run buildStyles() when we making changes
 function watchTask() {
-    watch(['index.scss'], buildStyles)
+    watch(['*.scss'], buildStyles)
 }
 
 exports.default = series(buildStyles, watchTask);
