@@ -26,9 +26,9 @@ $colors: (
 }
 
 // @debug map-get($map: $colors, $key: "purple"); // #9900ff
-@debug map-has-key($map: $colors, $key: "secondary"); // true
-@debug map-remove($colors, "primary"); // remove primary
-@debug map-merge($colors, ("pink": #FFC0CB)); // add pink
+// @debug map-has-key($map: $colors, $key: "secondary"); // true
+// @debug map-remove($colors, "primary"); // remove primary
+// @debug map-merge($colors, ("pink": #FFC0CB)); // add pink
 
 // spacing
 $base-padding: 0.75rem;
