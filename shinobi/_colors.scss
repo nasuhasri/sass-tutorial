@@ -8,28 +8,30 @@
         background-color: $val;
     }
 
-    // loop through numbers
-    // light variations
-    @for $i from 1 through 9 {
-        // example: .text-primary-light-1
-        .text-#{$key}-light-#{$i} {
-            background-color: mix(white, $val, $i * 10%);
+    @if ($val != black and $val != white) {
+        // loop through numbers
+        // light variations
+        @for $i from 1 through 9 {
+            // example: .text-primary-light-1
+            .text-#{$key}-light-#{$i} {
+                background-color: mix(white, $val, $i * 10%);
+            }
+    
+            .bg-#{$key}-light-#{$i} {
+                background-color: mix(white, $val, $i * 10%);
+            }
         }
 
-        .bg-#{$key}-light-#{$i} {
-            background-color: mix(white, $val, $i * 10%);
-        }
-    }
-
-    // dark variations
-    @for $i from 1 through 9 {
-        // example: .text-primary-light-1
-        .text-#{$key}-dark-#{$i} {
-            background-color: mix(black, $val, $i * 10%);
-        }
-
-        .bg-#{$key}-dark-#{$i} {
-            background-color: mix(black, $val, $i * 10%);
+        // dark variations
+        @for $i from 1 through 9 {
+            // example: .text-primary-light-1
+            .text-#{$key}-dark-#{$i} {
+                background-color: mix(black, $val, $i * 10%);
+            }
+    
+            .bg-#{$key}-dark-#{$i} {
+                background-color: mix(black, $val, $i * 10%);
+            }
         }
     }
 }
