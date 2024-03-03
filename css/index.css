@@ -31,12 +31,21 @@ h1 a {
   color: red;
 }
 
+h1 {
+  color: indigo;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: #1AC888;
+}
+
 button {
   color: white;
   border: 0;
-  background-color: #326DEE;
+  background-color: indigo;
   border-radius: 20px;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
 .error {
@@ -44,9 +53,9 @@ button {
   border-color: #D32752;
   border-style: solid;
   margin: 0.75rem;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 20px;
-  border-width: 1px;
+  border-width: 3px;
 }
 
 @media (min-width: 0) {
@@ -147,43 +156,43 @@ button {
   }
 }
 .text-primary {
-  color: #326DEE;
+  color: indigo;
 }
 
 .bg-primary {
-  background-color: #326DEE;
+  background-color: indigo;
 }
 
 .bg-primary-light-2 {
-  background-color: #5b8af1;
+  background-color: #6f339b;
 }
 
 .bg-primary-light-4 {
-  background-color: #84a7f5;
+  background-color: #9366b4;
 }
 
 .bg-primary-light-6 {
-  background-color: #adc5f8;
+  background-color: #b799cd;
 }
 
 .bg-primary-light-8 {
-  background-color: #d6e2fc;
+  background-color: #dbcce6;
 }
 
 .bg-primary-dark-2 {
-  background-color: #2857be;
+  background-color: #3c0068;
 }
 
 .bg-primary-dark-4 {
-  background-color: #1e418f;
+  background-color: #2d004e;
 }
 
 .bg-primary-dark-6 {
-  background-color: #142c5f;
+  background-color: #1e0034;
 }
 
 .bg-primary-dark-8 {
-  background-color: #0a1630;
+  background-color: #0f001a;
 }
 
 .text-secondary {
@@ -292,14 +301,14 @@ button {
 
 .card {
   display: block;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
+  padding: 1rem;
+  border: 3px solid #ddd;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .card .card-title {
   font-size: 1.5rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1rem;
   font-weight: bold;
 }
 .card .card-body {
@@ -314,7 +323,7 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #e2e2e2;
 }
@@ -324,12 +333,12 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
-  background-color: #326DEE;
+  background-color: indigo;
 }
 .btn-primary:hover {
-  background-color: #4a7ef0;
+  background-color: #5a009c;
 }
 
 .btn-complement-primary {
@@ -337,14 +346,14 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
-  background-color: #326DEE;
-  color: #fae7bf;
+  background-color: indigo;
+  color: #7cff1c;
 }
 .btn-complement-primary:hover {
-  color: #326DEE;
-  background-color: #fae7bf;
+  color: indigo;
+  background-color: #7cff1c;
 }
 
 .btn-secondary {
@@ -352,7 +361,7 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #1AC888;
 }
@@ -365,10 +374,10 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #fff;
-  border: 1px solid #1AC888;
+  border: 3px solid #1AC888;
 }
 .btn-outlined-secondary:hover {
   background-color: #1AC888;
@@ -379,7 +388,7 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #D32752;
 }
@@ -392,7 +401,7 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #F6C31C;
 }
@@ -405,10 +414,10 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #fff;
-  border: 1px solid #ffa600;
+  border: 3px solid #ffa600;
 }
 .btn-outlined-orange:hover {
   background-color: #ffa600;
@@ -419,10 +428,10 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #fff;
-  border: 1px solid #9900ff;
+  border: 3px solid #9900ff;
 }
 .btn-outlined-purple:hover {
   background-color: #9900ff;
@@ -433,7 +442,7 @@ button {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #9900ff;
   color: #c2ff99;
@@ -452,14 +461,14 @@ button {
 }
 
 .navbar, .navbar-primary {
-  padding: 0.75rem;
+  padding: 1rem;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .navbar .site-title, .navbar-primary .site-title {
   font-size: 1.5rem;
 }
 .navbar-primary {
-  background-color: #326DEE;
+  background-color: indigo;
 }
 
 .p-0 {
@@ -467,19 +476,19 @@ button {
 }
 
 .pt-3 {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .pt-4 {
-  padding-top: 4.5rem;
+  padding-top: 6rem;
 }
 
 .pb-3 {
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 .pb-4 {
-  padding-bottom: 4.5rem;
+  padding-bottom: 6rem;
 }
 
 .m-1 {

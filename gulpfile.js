@@ -6,7 +6,7 @@ const purgecss = require('gulp-purgecss');
 
 // compiling sass to css file and put it in css root folder
 function buildStyles() {
-    return src('shinobi/**/*.scss')
+    return src('sass/**/*.scss')
         .pipe(sass())
         // look into html files and see what classes and rules do we actually use
         // look at our css files and take out any rules we dont use
@@ -16,7 +16,7 @@ function buildStyles() {
 
 // watch source sass file - auto run buildStyles() when we making changes
 function watchTask() {
-    watch(['shinobi/**/*.scss', '*.html'], buildStyles)
+    watch(['sass/**/*.scss', '*.html'], buildStyles)
 }
 
 exports.default = series(buildStyles, watchTask);
